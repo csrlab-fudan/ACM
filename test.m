@@ -1,3 +1,5 @@
+% Last modified on April. 30, 2021
+% Copyright Communication System Research Laboratory, Fudan University
 %% quaternary ACM pair
 [a, b] = gen_quaternary_acm_pair(26, 15); 
 figure;

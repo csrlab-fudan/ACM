@@ -1,3 +1,5 @@
+% Last modified on April. 30, 2021
+% Copyright Communication System Research Laboratory, Fudan University
 function [a, b, c, d] = gen_golay_sequence_quad_inter(M)
 s = (M-1)/2;
 [A, B, C, D] = gen_base_sequence(M);

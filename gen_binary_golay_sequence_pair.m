@@ -1,3 +1,5 @@
+% Last modified on April. 30, 2021
+% Copyright Communication System Research Laboratory, Fudan University
 function seq = gen_binary_golay_sequence_pair(s)
 expo = len_dec(s);
 e2 = [1, 1; 1, -1];
