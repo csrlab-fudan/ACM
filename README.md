@@ -13,3 +13,17 @@
   [q1, q2, q3, q4] = gen_quaternary_acm_quad(m, n);  
   - Input: m is the length in the first dimension, n is the length in the second dimension.  
   - Output: [q1, q2, q3, q4] is a quaternary ACM quad.  
+## Quaternary ACM quad of size 24 x 799
+[q1, q2, q3, q4] = quad_24x799;  
+- Output: [q1, q2, q3, q4] is a quaternary ACM quad of size 24 x 799. 
+
+## Quaternary ACM quad of size 24 x 959
+[q1, q2, q3, q4] = quad_24x959;  
+- Output: [q1, q2, q3, q4] is a quaternary ACM quad of size 24 x 959. 
+
+## test
+### to generate a quaternary ACM pair of size 26 x 15
+
+### to generate binary ACM quad of size within 78 x 78
+
+### to generate quaternary ACM quad of size 24 x (1:1000)
