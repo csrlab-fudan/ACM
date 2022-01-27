@@ -1,6 +1,6 @@
-% to generate quaternary ACM quad of size 24x959
+% to generate quaternary GCM quad of size 24x959
 % input: 
-% output: [q1, q2, q3, q4] is a quaternary ACM quad
+% output: [q1, q2, q3, q4] is a quaternary GCM quad
 % Last modified on April. 30, 2021
 % Copyright Communication System Research Laboratory, Fudan University
 function [q1, q2, q3, q4] = quad_24x959
@@ -9,8 +9,8 @@ a = a.';
 b = b.';
 c = c.';
 d = d.';
-[p11, p12] = gen_quaternary_acm_pair(6, 5);
-[p21, p22] = gen_quaternary_acm_pair(6, 4*3*11);
+[p11, p12] = gen_quaternary_gcm_pair(6, 5);
+[p21, p22] = gen_quaternary_gcm_pair(6, 4*3*11);
 e0 = [p11, p21];
 f0 = [p11, -p21];
 g0 = [p12, p22];
