@@ -1,10 +1,10 @@
-% to generate binary ACM quad of size within 78x78
+% to generate binary GCM quad of size within 78x78
 % input: m is the length in the first dimension 
 %           n is the length in the second dimension
-% output: [q1, q2, q3, q4] is a binary ACM quad
+% output: [q1, q2, q3, q4] is a binary GCM quad
 % Last modified on April. 30, 2021
 % Copyright Communication System Research Laboratory, Fudan University
-function [q1, q2, q3, q4] = gen_binary_acm_quad(m, n)
+function [q1, q2, q3, q4] = gen_binary_gcm_quad(m, n)
 assert(1<=m && m<=78 && 1<=n && n<=78, 'Out of range');
 [m2, M] = expo_dec(m, 2);
 [n2, N] = expo_dec(n, 2);
