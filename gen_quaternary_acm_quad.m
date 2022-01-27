@@ -1,11 +1,11 @@
-% to generate quaternary ACM quad of size s1t1 °¡(s2 +s3)t2 where s1 °¡s2, s1 °¡s3
-% and t1 °¡ t2 are sizes in Corollary 2
+% to generate quaternary GCM quad of size s1t1 ¬°√Å(s2 +s3)t2 where s1 ¬°√Ås2, s1 ¬°√Ås3
+% and t1 ¬°√Å t2 are sizes in Corollary 2
 % input: m is the length in the first dimension 
 %           n is the length in the second dimension
-% output: [q1, q2, q3, q4] is a quaternary ACM quad
+% output: [q1, q2, q3, q4] is a quaternary GCM quad
 % Last modified on April. 30, 2021
 % Copyright Communication System Research Laboratory, Fudan University
-function [q1, q2, q3, q4] = gen_quaternary_acm_quad(m, n)
+function [q1, q2, q3, q4] = gen_quaternary_gcm_quad(m, n)
 if m==0 || n==0
     q1 = []; q2 = []; q3 = []; q4 = [];
     return;
@@ -26,9 +26,9 @@ for i = 1:m
             s2 = k; 
             s3 = j-k;
             try
-                [a, b] = gen_quaternary_acm_pair(s1, s2);
-                [c, d] = gen_quaternary_acm_pair(s1, s3);
-                [e, f] = gen_quaternary_acm_pair(t1, t2);
+                [a, b] = gen_quaternary_gcm_pair(s1, s2);
+                [c, d] = gen_quaternary_gcm_pair(s1, s3);
+                [e, f] = gen_quaternary_gcm_pair(t1, t2);
             catch
                 continue;
             end
