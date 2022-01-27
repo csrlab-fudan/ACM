@@ -1,6 +1,6 @@
-% to generate quaternary ACM quad of size 24x799
+% to generate quaternary GCM quad of size 24x799
 % input: 
-% output: [Q1, Q2, Q3, Q4] is a quaternary ACM quad
+% output: [Q1, Q2, Q3, Q4] is a quaternary GCM quad
 % Last modified on April. 30, 2021
 % Copyright Communication System Research Laboratory, Fudan University
 function [Q1, Q2, Q3, Q4] = quad_24x799
