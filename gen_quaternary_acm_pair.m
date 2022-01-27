@@ -1,10 +1,10 @@
-% to generate quaternary ACM pair of size s1 x s2 constrained by Corollary 2 
+% to generate quaternary GCM pair of size s1 x s2 constrained by Corollary 2 
 % input: m is the length in the first dimension 
 %           n is the length in the second dimension
-% output: [a, b] is a quaternary ACM pair
+% output: [a, b] is a quaternary GCM pair
 % Last modified on April. 30, 2021
 % Copyright Communication System Research Laboratory, Fudan University
-function [a, b] = gen_quaternary_acm_pair(m, n)
+function [a, b] = gen_quaternary_gcm_pair(m, n)
 if m==0 || n==0
     a = []; b = [];
     return;
